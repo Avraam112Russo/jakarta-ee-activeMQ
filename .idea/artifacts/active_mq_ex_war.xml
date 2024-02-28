@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="active-mq-ex:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>active-mq-ex</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="active-mq-ex-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="active-mq-ex:war exploded" />
+    </root>
+  </artifact>
+</component>
