@@ -2,8 +2,9 @@ version: '3'
 
 services:
   activemq:
-    container_name: activemq
     image: codingpuss/activemq:5.17.2-jre-19-alpine
+    environment:
+      ACTIVEMQ_OPTS: "-Dorg.apache.activemq.SERIALIZABLE_PACKAGES=*"
     ports:
-      - 8161:8161
-      - 61616:61616
+      - "61616:61616"
+      - "8161:8161"
